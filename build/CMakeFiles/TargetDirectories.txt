@@ -1,1 +1,1 @@
-/home/tony/Server-Layout/build/CMakeFiles/cdn.dir
+/home/jinge/projects/Server-Layout/build/CMakeFiles/cdn.dir

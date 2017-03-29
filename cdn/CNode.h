@@ -1,15 +1,20 @@
+#pragma once
+
+#ifndef CNODE_H_
+#define CNODE_H_
+
 #include "SNode.h"
+
 class CNode{
-private:
+
+public:
 	int ID;
 	SNode server;
+	int netID;
 	int demand;
-public:
-	CNode(int id,int demand,SNode& server){
-		this->ID = id;
-		this->demand = demand;
-		this->server = server;
-	}
+
+	CNode(int id, int netID, int demand) : ID(id), netID(netID), demand(demand) {}
+	
 	int getID(){
 		return this->ID;
 	}
@@ -21,3 +26,5 @@ public:
 		return 0;
 	}
 };
+
+#endif

@@ -1,41 +1,34 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
 #include <string>
 #include <sstream>
 #include <fstream>
+#include "lib_io.h"
 #include "Edge.h"
 #include "SNode.h"
+#include "CNode.h"
+#include "constants.h"
 using namespace std;
 
+typedef vector<vector<int> > AdjMatrix;
+
 class Graph{
-private:
+
+public:
 	int N_SNode;
 	int N_CNode;
 	int N_Links;
-	vector<vector<int>> adjMat;
+	int netNum;
+	int consumerNum;
+	int serverCost;
+// 	vector<vector<int>> unitPay;
+// 	vector<vector<int>> maxBand;
+	vector<vector<int> >* unitPay;
+	vector<vector<int> >* maxBand;
+	vector<CNode> consumers;
 
-	void initGraph(const string& filename){
-		ifstream file;
-		file.open(filename,ios::in);
-		if(!file.is_open())
-			return;
-		string strLine;
-		getline(file,strLine);
-		istringstream istr(strLine);
-		istr>>N_SNode;
-		istr>>N_Links;
-		istr>>N_CNode;
-		
-		while(getline(file,strLine)){
-			if(strLine.empty()){
-				cout<<endl;
-				continue;
-			}
-			vector<int> vecInt;
-			int temp;
-		
-
-		}
-		
-	}
+	Graph();
+	void initGraph(char* topo[MAX_EDGE_NUM]);
 };

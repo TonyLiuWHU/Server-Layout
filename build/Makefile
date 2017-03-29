@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tony/Server-Layout/cdn
+CMAKE_SOURCE_DIR = /home/jinge/projects/Server-Layout/cdn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tony/Server-Layout/build
+CMAKE_BINARY_DIR = /home/jinge/projects/Server-Layout/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tony/Server-Layout/build/CMakeFiles /home/tony/Server-Layout/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinge/projects/Server-Layout/build/CMakeFiles /home/jinge/projects/Server-Layout/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tony/Server-Layout/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jinge/projects/Server-Layout/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,29 +111,29 @@ cdn/fast:
 	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/build
 .PHONY : cdn/fast
 
-Server-Layout.o: Server-Layout.cpp.o
-.PHONY : Server-Layout.o
+Graph.o: Graph.cpp.o
+.PHONY : Graph.o
 
 # target to build an object file
-Server-Layout.cpp.o:
-	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/Server-Layout.cpp.o
-.PHONY : Server-Layout.cpp.o
+Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
 
-Server-Layout.i: Server-Layout.cpp.i
-.PHONY : Server-Layout.i
+Graph.i: Graph.cpp.i
+.PHONY : Graph.i
 
 # target to preprocess a source file
-Server-Layout.cpp.i:
-	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/Server-Layout.cpp.i
-.PHONY : Server-Layout.cpp.i
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
 
-Server-Layout.s: Server-Layout.cpp.s
-.PHONY : Server-Layout.s
+Graph.s: Graph.cpp.s
+.PHONY : Graph.s
 
 # target to generate assembly for a file
-Server-Layout.cpp.s:
-	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/Server-Layout.cpp.s
-.PHONY : Server-Layout.cpp.s
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
 
 cdn.o: cdn.cpp.o
 .PHONY : cdn.o
@@ -183,6 +183,30 @@ deploy.cpp.s:
 	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/deploy.cpp.s
 .PHONY : deploy.cpp.s
 
+dijkstra.o: dijkstra.cpp.o
+.PHONY : dijkstra.o
+
+# target to build an object file
+dijkstra.cpp.o:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/dijkstra.cpp.o
+.PHONY : dijkstra.cpp.o
+
+dijkstra.i: dijkstra.cpp.i
+.PHONY : dijkstra.i
+
+# target to preprocess a source file
+dijkstra.cpp.i:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/dijkstra.cpp.i
+.PHONY : dijkstra.cpp.i
+
+dijkstra.s: dijkstra.cpp.s
+.PHONY : dijkstra.s
+
+# target to generate assembly for a file
+dijkstra.cpp.s:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/dijkstra.cpp.s
+.PHONY : dijkstra.cpp.s
+
 io.o: io.cpp.o
 .PHONY : io.o
 
@@ -207,6 +231,54 @@ io.cpp.s:
 	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/io.cpp.s
 .PHONY : io.cpp.s
 
+server_layout.o: server_layout.cpp.o
+.PHONY : server_layout.o
+
+# target to build an object file
+server_layout.cpp.o:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/server_layout.cpp.o
+.PHONY : server_layout.cpp.o
+
+server_layout.i: server_layout.cpp.i
+.PHONY : server_layout.i
+
+# target to preprocess a source file
+server_layout.cpp.i:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/server_layout.cpp.i
+.PHONY : server_layout.cpp.i
+
+server_layout.s: server_layout.cpp.s
+.PHONY : server_layout.s
+
+# target to generate assembly for a file
+server_layout.cpp.s:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/server_layout.cpp.s
+.PHONY : server_layout.cpp.s
+
+shortest_path.o: shortest_path.cpp.o
+.PHONY : shortest_path.o
+
+# target to build an object file
+shortest_path.cpp.o:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/shortest_path.cpp.o
+.PHONY : shortest_path.cpp.o
+
+shortest_path.i: shortest_path.cpp.i
+.PHONY : shortest_path.i
+
+# target to preprocess a source file
+shortest_path.cpp.i:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/shortest_path.cpp.i
+.PHONY : shortest_path.cpp.i
+
+shortest_path.s: shortest_path.cpp.s
+.PHONY : shortest_path.s
+
+# target to generate assembly for a file
+shortest_path.cpp.s:
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/shortest_path.cpp.s
+.PHONY : shortest_path.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,18 +288,27 @@ help:
 	@echo "... cdn"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Server-Layout.o"
-	@echo "... Server-Layout.i"
-	@echo "... Server-Layout.s"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... cdn.o"
 	@echo "... cdn.i"
 	@echo "... cdn.s"
 	@echo "... deploy.o"
 	@echo "... deploy.i"
 	@echo "... deploy.s"
+	@echo "... dijkstra.o"
+	@echo "... dijkstra.i"
+	@echo "... dijkstra.s"
 	@echo "... io.o"
 	@echo "... io.i"
 	@echo "... io.s"
+	@echo "... server_layout.o"
+	@echo "... server_layout.i"
+	@echo "... server_layout.s"
+	@echo "... shortest_path.o"
+	@echo "... shortest_path.i"
+	@echo "... shortest_path.s"
 .PHONY : help
 
 

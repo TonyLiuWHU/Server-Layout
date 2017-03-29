@@ -1,0 +1,58 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x06\x00c\x00d\x00n)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///home/jinge/projects/Server-Layout/build
+Build Type=
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///usr/local
+
+[Launch]
+Launch Configurations=Launch Configuration 0,Launch Configuration 1
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=cdn
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=../../case_example/case0.txt ../../case_example/result0.txt
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x02\x00\x00\x00\x06\x00c\x00d\x00n\x00\x00\x00\x06\x00c\x00d\x00n)
+Dependency Action=Build
+EnvironmentGroup=default
+Executable=file:///home/jinge/projects/Server-Layout/bin/cdn
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=cdn,cdn
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[Launch][Launch Configuration 1]
+Configured Launch Modes=debug
+Configured Launchers=gdb
+Name=cdn
+Type=Native Application
+
+[Launch][Launch Configuration 1][Data]
+Arguments=../../case_example/case4.txt ../../case_example/result4.txt
+Configured from ProjectItem=cdn,cdn
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Nothing
+EnvironmentGroup=default
+Executable=file:///home/jinge/projects/Server-Layout/cdn/
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=cdn,cdn
+Use External Terminal=false
+Working Directory=file:///home/jinge/projects/Server-Layout/build/
+isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit
