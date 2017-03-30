@@ -8,10 +8,12 @@
 #include "deploy.h"
 #include "core.h"
 #include "Graph.h"
+#include "lib_io.h"
 
 using namespace std;
 
-typedef int NetID;
+int resultNum = 0;
+std::stringstream result;
 
 
 void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
@@ -20,7 +22,6 @@ void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
 	
 	Graph graph;
 	graph.initGraph(topo);
-
 	
 	/* //test mat*******************************************
 	cout<<endl<<"*************************************"<<endl;
@@ -57,6 +58,17 @@ void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
 	cout<<endl<<"*************************************"<<endl;
 	*/
 	
-	vector<NetID> serverLocation = initialServerLocation(graph);
-	computeShortestPaths(graph, serverLocation);
+	vector<int> serverLocation = initialServerLocation(graph);
+	int i = 0;
+	cout << "××××××××××××××××××××第" << i++ << "次尝试××××××××××××××××××××" << endl;
+	while (!computeShortestPaths(graph, serverLocation))
+	{
+		cout << "××××××××××××××××××××第" << i++ << "次尝试××××××××××××××××××××" << endl;
+		//清空输出缓存
+		result.str("");
+		resultNum = 0;
+	}
+	stringstream ss;
+	ss << resultNum << endl << result.str();
+	write_result(ss.str().c_str(), filename);
 }

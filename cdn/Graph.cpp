@@ -3,6 +3,22 @@
 Graph::Graph() {
 }
 
+Graph::Graph(const Graph& graph) : 
+	N_SNode(graph.N_SNode),
+	N_CNode(graph.N_CNode),
+	N_Links(graph.N_Links),
+	netNum(graph.netNum),
+	consumerNum(graph.consumerNum),
+	serverCost(graph.serverCost),
+	consumers(graph.consumers)
+{
+	unitPay = new vector<vector<int>>;
+	maxBand = new vector<vector<int>>;
+	
+	*unitPay = *(graph.unitPay);
+	*maxBand = *(graph.maxBand);
+}
+
 void Graph::initGraph(char* topo[MAX_EDGE_NUM]) {
 
 	int linkNum;

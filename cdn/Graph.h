@@ -30,5 +30,6 @@ public:
 	vector<CNode> consumers;
 
 	Graph();
+	Graph(const Graph& graph);
 	void initGraph(char* topo[MAX_EDGE_NUM]);
 };

@@ -1,7 +1,8 @@
 #include <algorithm>
-#include <boost/concept_check.hpp>
+//#include <boost/concept_check.hpp>
 
 #include "Graph.h"
+#include "deploy.h"
 
 /*
 * Dijkstra最短路径。
@@ -13,14 +14,14 @@
 *     prev -- 前驱顶点数组。即，prev[i]的值是"顶点vs"到"顶点i"的最短路径所经历的全部顶点中，位于"顶点i"之前的那个顶点。
 *     dist -- 长度数组。即，dist[i]是"顶点vs"到"顶点i"的最短路径的长度。
 */
-void dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vector<int>& prev, vector<int>& dist)
+int dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vector<int>& prev, vector<int>& dist)
 {
-	int k = 0;
+	int k = -1;
 	int min;
 	int tmp;
 	AdjMatrix& unitPay = *(graph.unitPay);
 	AdjMatrix& maxBand = *(graph.maxBand);
-	
+	/*
 	for (int i=0; i<maxBand.size(); i++)
 	{
 	  for (int j=0; j<maxBand[0].size(); j++)
@@ -37,7 +38,7 @@ void dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vecto
 	  }
 	  cout << endl;
 	}
-	
+	*/
 	const int vexNum = unitPay.size();
 	vector<int> flag(vexNum, 0);      // flag[i]=1表示"顶点vs"到"顶点i"的最短路径已成功获取。
 	
@@ -52,6 +53,7 @@ void dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vecto
 	dist[consumer.netID] = 0;
 
 	// 遍历mVexNum-1次；每次找出一个顶点的最短路径。
+	int lastK = k;
 	for (int i = 1; i < vexNum; i++)
 	{
 		// 寻找当前最小的路径；
@@ -67,6 +69,12 @@ void dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vecto
 		}
 		// 标记"顶点k"为已经获取到最短路径
 		flag[k] = 1;
+		//搜索失败，找不到有效路径，返回需要添加的服务器节点
+		if (k == lastK)
+		{
+			return k;
+		}
+		lastK = k;
 
 		// 修正当前最短路径和前驱顶点
 		// 即，当已经"顶点k的最短路径"之后，更新"未获取最短路径的顶点的最短路径和前驱顶点"。
@@ -93,6 +101,7 @@ void dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vecto
 	// 打印dijkstra最短路径的结果
 	cout << "dijkstra(" << consumer.ID << "): " << endl;
 	cout << k;
+	result << k;
 	
 	int demand = consumer.demand;
 	//遍历从服务器节点到消费节点的整条路径，查看是否有超出带宽限制的线路
@@ -128,18 +137,25 @@ void dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vecto
 		end = prev[start];
 	  
 		cout << " -> " << start;
+		if (start != consumer.netID)
+		{
+			result << " " << start;
+		}
 	}
 	cout << "(consumer)." << endl;
+	result << " " << consumer.ID << " " << minBand << endl;
+	resultNum++;
 
 	vector<int> newPrev(graph.netNum, consumer.netID);
 	vector<int> newDist(graph.netNum, INF);
-	vector<int> equivalentServerLocations{ firstExceedNode };
+//	vector<int> equivalentServerLocations{ firstExceedNode };
 	consumer.demand -= (demand < minBand ? demand : minBand);
 	if (consumer.demand <= 0)
 	{
-		return;
+		//正常返回
+		return -1;
 	}
-	dijkstra(graph, equivalentServerLocations, consumer, newPrev, newDist);
+	return dijkstra(graph, serverLocations, consumer, newPrev, newDist);
 	
 //	for (int i = 0; i < vexNum; i++)
 //		cout << "  shortest(" << consumer.netID << ", " << i << ")=" << dist[i] << endl;

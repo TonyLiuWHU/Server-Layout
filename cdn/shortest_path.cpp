@@ -2,10 +2,11 @@
 #include "core.h"
 #include "Graph.h"
 #include "CNode.h"
+#include "deploy.h"
 
 using namespace std;
 
-void computeShortestPaths(Graph& graph, vector<int>& serverLocations)
+bool computeShortestPaths(Graph graph, vector<int>& serverLocations)
 {
     //分别计算每个消费节点的最短路径
     for (int i=0; i < graph.consumerNum; i++)
@@ -13,8 +14,14 @@ void computeShortestPaths(Graph& graph, vector<int>& serverLocations)
 	vector<int> prev(graph.netNum, graph.consumers[i].netID);
 	vector<int> dist(graph.netNum, INF);
 	cout << "-------------Consumer " << i << "--------------------" << endl;
-	dijkstra(graph, serverLocations, graph.consumers[i], prev, dist);
+//	result << "-------------Consumer " << i << "--------------------" << endl;
+	int k = dijkstra(graph, serverLocations, graph.consumers[i], prev, dist);
+	if (k >= 0)
+	{
+		serverLocations.push_back(k);
+		return false;
+	}
 	
     }
-
+    return true;
 }
