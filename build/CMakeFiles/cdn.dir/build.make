@@ -49,28 +49,28 @@ include CMakeFiles/cdn.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cdn.dir/flags.make
 
-CMakeFiles/cdn.dir/cdn.cpp.o: CMakeFiles/cdn.dir/flags.make
-CMakeFiles/cdn.dir/cdn.cpp.o: /home/jinge/projects/Server-Layout/cdn/cdn.cpp
+CMakeFiles/cdn.dir/dijkstra.cpp.o: CMakeFiles/cdn.dir/flags.make
+CMakeFiles/cdn.dir/dijkstra.cpp.o: /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/cdn.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/cdn.cpp.o -c /home/jinge/projects/Server-Layout/cdn/cdn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/dijkstra.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/dijkstra.cpp.o -c /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp
 
-CMakeFiles/cdn.dir/cdn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/cdn.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/cdn.cpp > CMakeFiles/cdn.dir/cdn.cpp.i
+CMakeFiles/cdn.dir/dijkstra.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/dijkstra.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp > CMakeFiles/cdn.dir/dijkstra.cpp.i
 
-CMakeFiles/cdn.dir/cdn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/cdn.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/cdn.cpp -o CMakeFiles/cdn.dir/cdn.cpp.s
+CMakeFiles/cdn.dir/dijkstra.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/dijkstra.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp -o CMakeFiles/cdn.dir/dijkstra.cpp.s
 
-CMakeFiles/cdn.dir/cdn.cpp.o.requires:
-.PHONY : CMakeFiles/cdn.dir/cdn.cpp.o.requires
+CMakeFiles/cdn.dir/dijkstra.cpp.o.requires:
+.PHONY : CMakeFiles/cdn.dir/dijkstra.cpp.o.requires
 
-CMakeFiles/cdn.dir/cdn.cpp.o.provides: CMakeFiles/cdn.dir/cdn.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/cdn.cpp.o.provides.build
-.PHONY : CMakeFiles/cdn.dir/cdn.cpp.o.provides
+CMakeFiles/cdn.dir/dijkstra.cpp.o.provides: CMakeFiles/cdn.dir/dijkstra.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/dijkstra.cpp.o.provides.build
+.PHONY : CMakeFiles/cdn.dir/dijkstra.cpp.o.provides
 
-CMakeFiles/cdn.dir/cdn.cpp.o.provides.build: CMakeFiles/cdn.dir/cdn.cpp.o
+CMakeFiles/cdn.dir/dijkstra.cpp.o.provides.build: CMakeFiles/cdn.dir/dijkstra.cpp.o
 
 CMakeFiles/cdn.dir/deploy.cpp.o: CMakeFiles/cdn.dir/flags.make
 CMakeFiles/cdn.dir/deploy.cpp.o: /home/jinge/projects/Server-Layout/cdn/deploy.cpp
@@ -95,32 +95,9 @@ CMakeFiles/cdn.dir/deploy.cpp.o.provides: CMakeFiles/cdn.dir/deploy.cpp.o.requir
 
 CMakeFiles/cdn.dir/deploy.cpp.o.provides.build: CMakeFiles/cdn.dir/deploy.cpp.o
 
-CMakeFiles/cdn.dir/dijkstra.cpp.o: CMakeFiles/cdn.dir/flags.make
-CMakeFiles/cdn.dir/dijkstra.cpp.o: /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/dijkstra.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/dijkstra.cpp.o -c /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp
-
-CMakeFiles/cdn.dir/dijkstra.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/dijkstra.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp > CMakeFiles/cdn.dir/dijkstra.cpp.i
-
-CMakeFiles/cdn.dir/dijkstra.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/dijkstra.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/dijkstra.cpp -o CMakeFiles/cdn.dir/dijkstra.cpp.s
-
-CMakeFiles/cdn.dir/dijkstra.cpp.o.requires:
-.PHONY : CMakeFiles/cdn.dir/dijkstra.cpp.o.requires
-
-CMakeFiles/cdn.dir/dijkstra.cpp.o.provides: CMakeFiles/cdn.dir/dijkstra.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/dijkstra.cpp.o.provides.build
-.PHONY : CMakeFiles/cdn.dir/dijkstra.cpp.o.provides
-
-CMakeFiles/cdn.dir/dijkstra.cpp.o.provides.build: CMakeFiles/cdn.dir/dijkstra.cpp.o
-
 CMakeFiles/cdn.dir/Graph.cpp.o: CMakeFiles/cdn.dir/flags.make
 CMakeFiles/cdn.dir/Graph.cpp.o: /home/jinge/projects/Server-Layout/cdn/Graph.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/Graph.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/Graph.cpp.o -c /home/jinge/projects/Server-Layout/cdn/Graph.cpp
 
@@ -141,55 +118,9 @@ CMakeFiles/cdn.dir/Graph.cpp.o.provides: CMakeFiles/cdn.dir/Graph.cpp.o.requires
 
 CMakeFiles/cdn.dir/Graph.cpp.o.provides.build: CMakeFiles/cdn.dir/Graph.cpp.o
 
-CMakeFiles/cdn.dir/io.cpp.o: CMakeFiles/cdn.dir/flags.make
-CMakeFiles/cdn.dir/io.cpp.o: /home/jinge/projects/Server-Layout/cdn/io.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/io.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/io.cpp.o -c /home/jinge/projects/Server-Layout/cdn/io.cpp
-
-CMakeFiles/cdn.dir/io.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/io.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/io.cpp > CMakeFiles/cdn.dir/io.cpp.i
-
-CMakeFiles/cdn.dir/io.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/io.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/io.cpp -o CMakeFiles/cdn.dir/io.cpp.s
-
-CMakeFiles/cdn.dir/io.cpp.o.requires:
-.PHONY : CMakeFiles/cdn.dir/io.cpp.o.requires
-
-CMakeFiles/cdn.dir/io.cpp.o.provides: CMakeFiles/cdn.dir/io.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/io.cpp.o.provides.build
-.PHONY : CMakeFiles/cdn.dir/io.cpp.o.provides
-
-CMakeFiles/cdn.dir/io.cpp.o.provides.build: CMakeFiles/cdn.dir/io.cpp.o
-
-CMakeFiles/cdn.dir/server_layout.cpp.o: CMakeFiles/cdn.dir/flags.make
-CMakeFiles/cdn.dir/server_layout.cpp.o: /home/jinge/projects/Server-Layout/cdn/server_layout.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/server_layout.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/server_layout.cpp.o -c /home/jinge/projects/Server-Layout/cdn/server_layout.cpp
-
-CMakeFiles/cdn.dir/server_layout.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/server_layout.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/server_layout.cpp > CMakeFiles/cdn.dir/server_layout.cpp.i
-
-CMakeFiles/cdn.dir/server_layout.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/server_layout.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/server_layout.cpp -o CMakeFiles/cdn.dir/server_layout.cpp.s
-
-CMakeFiles/cdn.dir/server_layout.cpp.o.requires:
-.PHONY : CMakeFiles/cdn.dir/server_layout.cpp.o.requires
-
-CMakeFiles/cdn.dir/server_layout.cpp.o.provides: CMakeFiles/cdn.dir/server_layout.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/server_layout.cpp.o.provides.build
-.PHONY : CMakeFiles/cdn.dir/server_layout.cpp.o.provides
-
-CMakeFiles/cdn.dir/server_layout.cpp.o.provides.build: CMakeFiles/cdn.dir/server_layout.cpp.o
-
 CMakeFiles/cdn.dir/shortest_path.cpp.o: CMakeFiles/cdn.dir/flags.make
 CMakeFiles/cdn.dir/shortest_path.cpp.o: /home/jinge/projects/Server-Layout/cdn/shortest_path.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/shortest_path.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/shortest_path.cpp.o -c /home/jinge/projects/Server-Layout/cdn/shortest_path.cpp
 
@@ -210,42 +141,111 @@ CMakeFiles/cdn.dir/shortest_path.cpp.o.provides: CMakeFiles/cdn.dir/shortest_pat
 
 CMakeFiles/cdn.dir/shortest_path.cpp.o.provides.build: CMakeFiles/cdn.dir/shortest_path.cpp.o
 
+CMakeFiles/cdn.dir/server_layout.cpp.o: CMakeFiles/cdn.dir/flags.make
+CMakeFiles/cdn.dir/server_layout.cpp.o: /home/jinge/projects/Server-Layout/cdn/server_layout.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/server_layout.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/server_layout.cpp.o -c /home/jinge/projects/Server-Layout/cdn/server_layout.cpp
+
+CMakeFiles/cdn.dir/server_layout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/server_layout.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/server_layout.cpp > CMakeFiles/cdn.dir/server_layout.cpp.i
+
+CMakeFiles/cdn.dir/server_layout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/server_layout.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/server_layout.cpp -o CMakeFiles/cdn.dir/server_layout.cpp.s
+
+CMakeFiles/cdn.dir/server_layout.cpp.o.requires:
+.PHONY : CMakeFiles/cdn.dir/server_layout.cpp.o.requires
+
+CMakeFiles/cdn.dir/server_layout.cpp.o.provides: CMakeFiles/cdn.dir/server_layout.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/server_layout.cpp.o.provides.build
+.PHONY : CMakeFiles/cdn.dir/server_layout.cpp.o.provides
+
+CMakeFiles/cdn.dir/server_layout.cpp.o.provides.build: CMakeFiles/cdn.dir/server_layout.cpp.o
+
+CMakeFiles/cdn.dir/io.cpp.o: CMakeFiles/cdn.dir/flags.make
+CMakeFiles/cdn.dir/io.cpp.o: /home/jinge/projects/Server-Layout/cdn/io.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/io.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/io.cpp.o -c /home/jinge/projects/Server-Layout/cdn/io.cpp
+
+CMakeFiles/cdn.dir/io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/io.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/io.cpp > CMakeFiles/cdn.dir/io.cpp.i
+
+CMakeFiles/cdn.dir/io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/io.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/io.cpp -o CMakeFiles/cdn.dir/io.cpp.s
+
+CMakeFiles/cdn.dir/io.cpp.o.requires:
+.PHONY : CMakeFiles/cdn.dir/io.cpp.o.requires
+
+CMakeFiles/cdn.dir/io.cpp.o.provides: CMakeFiles/cdn.dir/io.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/io.cpp.o.provides.build
+.PHONY : CMakeFiles/cdn.dir/io.cpp.o.provides
+
+CMakeFiles/cdn.dir/io.cpp.o.provides.build: CMakeFiles/cdn.dir/io.cpp.o
+
+CMakeFiles/cdn.dir/cdn.cpp.o: CMakeFiles/cdn.dir/flags.make
+CMakeFiles/cdn.dir/cdn.cpp.o: /home/jinge/projects/Server-Layout/cdn/cdn.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jinge/projects/Server-Layout/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cdn.dir/cdn.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cdn.dir/cdn.cpp.o -c /home/jinge/projects/Server-Layout/cdn/cdn.cpp
+
+CMakeFiles/cdn.dir/cdn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cdn.dir/cdn.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jinge/projects/Server-Layout/cdn/cdn.cpp > CMakeFiles/cdn.dir/cdn.cpp.i
+
+CMakeFiles/cdn.dir/cdn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cdn.dir/cdn.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jinge/projects/Server-Layout/cdn/cdn.cpp -o CMakeFiles/cdn.dir/cdn.cpp.s
+
+CMakeFiles/cdn.dir/cdn.cpp.o.requires:
+.PHONY : CMakeFiles/cdn.dir/cdn.cpp.o.requires
+
+CMakeFiles/cdn.dir/cdn.cpp.o.provides: CMakeFiles/cdn.dir/cdn.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cdn.dir/build.make CMakeFiles/cdn.dir/cdn.cpp.o.provides.build
+.PHONY : CMakeFiles/cdn.dir/cdn.cpp.o.provides
+
+CMakeFiles/cdn.dir/cdn.cpp.o.provides.build: CMakeFiles/cdn.dir/cdn.cpp.o
+
 # Object files for target cdn
 cdn_OBJECTS = \
-"CMakeFiles/cdn.dir/cdn.cpp.o" \
-"CMakeFiles/cdn.dir/deploy.cpp.o" \
 "CMakeFiles/cdn.dir/dijkstra.cpp.o" \
+"CMakeFiles/cdn.dir/deploy.cpp.o" \
 "CMakeFiles/cdn.dir/Graph.cpp.o" \
-"CMakeFiles/cdn.dir/io.cpp.o" \
+"CMakeFiles/cdn.dir/shortest_path.cpp.o" \
 "CMakeFiles/cdn.dir/server_layout.cpp.o" \
-"CMakeFiles/cdn.dir/shortest_path.cpp.o"
+"CMakeFiles/cdn.dir/io.cpp.o" \
+"CMakeFiles/cdn.dir/cdn.cpp.o"
 
 # External object files for target cdn
 cdn_EXTERNAL_OBJECTS =
 
-cdn: CMakeFiles/cdn.dir/cdn.cpp.o
-cdn: CMakeFiles/cdn.dir/deploy.cpp.o
-cdn: CMakeFiles/cdn.dir/dijkstra.cpp.o
-cdn: CMakeFiles/cdn.dir/Graph.cpp.o
-cdn: CMakeFiles/cdn.dir/io.cpp.o
-cdn: CMakeFiles/cdn.dir/server_layout.cpp.o
-cdn: CMakeFiles/cdn.dir/shortest_path.cpp.o
-cdn: CMakeFiles/cdn.dir/build.make
-cdn: CMakeFiles/cdn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable cdn"
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/dijkstra.cpp.o
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/deploy.cpp.o
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/Graph.cpp.o
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/shortest_path.cpp.o
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/server_layout.cpp.o
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/io.cpp.o
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/cdn.cpp.o
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/build.make
+/home/jinge/projects/Server-Layout/bin/cdn: CMakeFiles/cdn.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/jinge/projects/Server-Layout/bin/cdn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cdn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/cdn.dir/build: cdn
+CMakeFiles/cdn.dir/build: /home/jinge/projects/Server-Layout/bin/cdn
 .PHONY : CMakeFiles/cdn.dir/build
 
-CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/cdn.cpp.o.requires
-CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/deploy.cpp.o.requires
 CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/dijkstra.cpp.o.requires
+CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/deploy.cpp.o.requires
 CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/Graph.cpp.o.requires
-CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/io.cpp.o.requires
-CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/server_layout.cpp.o.requires
 CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/shortest_path.cpp.o.requires
+CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/server_layout.cpp.o.requires
+CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/io.cpp.o.requires
+CMakeFiles/cdn.dir/requires: CMakeFiles/cdn.dir/cdn.cpp.o.requires
 .PHONY : CMakeFiles/cdn.dir/requires
 
 CMakeFiles/cdn.dir/clean:

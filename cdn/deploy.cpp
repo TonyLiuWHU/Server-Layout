@@ -69,6 +69,6 @@ void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
 		resultNum = 0;
 	}
 	stringstream ss;
-	ss << resultNum << endl << result.str();
+	ss << resultNum << endl << endl << result.str();
 	write_result(ss.str().c_str(), filename);
 }
