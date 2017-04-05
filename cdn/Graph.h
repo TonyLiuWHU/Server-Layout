@@ -6,8 +6,6 @@
 #include <sstream>
 #include <fstream>
 #include "lib_io.h"
-#include "Edge.h"
-#include "SNode.h"
 #include "CNode.h"
 #include "constants.h"
 using namespace std;
@@ -25,11 +23,11 @@ public:
 	int serverCost;
 // 	vector<vector<int>> unitPay;
 // 	vector<vector<int>> maxBand;
-	vector<vector<int> >* unitPay;
-	vector<vector<int> >* maxBand;
+	vector<vector<int>> unitPay;
+	vector<vector<int>> maxBand;
 	vector<CNode> consumers;
 
-	Graph();
-	Graph(const Graph& graph);
-	void initGraph(char* topo[MAX_EDGE_NUM]);
+	Graph(char* topo[MAX_EDGE_NUM]);
+//	Graph(const Graph& graph);
+//	void initGraph(char* topo[MAX_EDGE_NUM]);
 };

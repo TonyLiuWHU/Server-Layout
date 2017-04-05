@@ -14,7 +14,7 @@ struct CompareByTotalBand {
 
 vector<int> initialServerLocation(Graph& graph)
 {
-	AdjMatrix& maxBand = *(graph.maxBand);
+	AdjMatrix& maxBand = graph.maxBand;
 	vector<pair<int, int>> totalBands;
 	for (int i=0; i < maxBand.size(); i++)
 	{
@@ -31,8 +31,8 @@ vector<int> initialServerLocation(Graph& graph)
 		cout << it->first << "\t" << it->second << endl;
 	}
 	
-	vector<int> serverLocation(maxBand.size() / 10);
-	for (int i=0; i < maxBand.size() / 10; i++)
+	vector<int> serverLocation(maxBand.size() / 20);
+	for (int i=0; i < maxBand.size() / 20; i++)
 	{
 		serverLocation[i] = totalBands[i].first;
 	}

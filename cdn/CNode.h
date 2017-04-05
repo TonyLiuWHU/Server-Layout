@@ -3,15 +3,14 @@
 #ifndef CNODE_H_
 #define CNODE_H_
 
-#include "SNode.h"
-
 class CNode{
 
 public:
 	int ID;
-	SNode server;
 	int netID;
 	int demand;
+	
+	CNode(const CNode& cnode) : ID(cnode.ID), netID(cnode.netID), demand(cnode.demand) {}
 
 	CNode(int id, int netID, int demand) : ID(id), netID(netID), demand(demand) {}
 	

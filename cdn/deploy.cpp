@@ -20,8 +20,8 @@ void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
 {
 	cout<<"The begin of deploy_server:"<<endl;
 	
-	Graph graph;
-	graph.initGraph(topo);
+	Graph graph(topo);
+//	graph.initGraph(topo);
 	
 	/* //test mat*******************************************
 	cout<<endl<<"*************************************"<<endl;

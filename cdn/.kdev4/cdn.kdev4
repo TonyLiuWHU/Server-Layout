@@ -42,7 +42,7 @@ Name=cdn
 Type=Native Application
 
 [Launch][Launch Configuration 1][Data]
-Arguments=../../case_example/case6.txt ../../case_example/result6.txt
+Arguments=../../case_example/case7.txt ../../case_example/result7.txt
 Configured from ProjectItem=cdn,cdn
 Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
 Dependency Action=Nothing

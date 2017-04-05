@@ -7,12 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/jinge/projects/Server-Layout/cdn/CNode.h
-SNode.h
-/home/jinge/projects/Server-Layout/cdn/SNode.h
-
-/home/jinge/projects/Server-Layout/cdn/Edge.h
-SNode.h
-/home/jinge/projects/Server-Layout/cdn/SNode.h
 
 /home/jinge/projects/Server-Layout/cdn/Graph.cpp
 Graph.h
@@ -31,22 +25,10 @@ fstream
 -
 lib_io.h
 /home/jinge/projects/Server-Layout/cdn/lib_io.h
-Edge.h
-/home/jinge/projects/Server-Layout/cdn/Edge.h
-SNode.h
-/home/jinge/projects/Server-Layout/cdn/SNode.h
 CNode.h
 /home/jinge/projects/Server-Layout/cdn/CNode.h
 constants.h
 /home/jinge/projects/Server-Layout/cdn/constants.h
-
-/home/jinge/projects/Server-Layout/cdn/SNode.h
-vector
--
-list
--
-iostream
--
 
 /home/jinge/projects/Server-Layout/cdn/cdn.cpp
 deploy.h

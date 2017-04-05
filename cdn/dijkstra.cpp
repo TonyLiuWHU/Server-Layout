@@ -19,8 +19,8 @@ int dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vector
 	int k = -1;
 	int min;
 	int tmp;
-	AdjMatrix& unitPay = *(graph.unitPay);
-	AdjMatrix& maxBand = *(graph.maxBand);
+	AdjMatrix& unitPay = graph.unitPay;
+	AdjMatrix& maxBand = graph.maxBand;
 	/*
 	for (int i=0; i<maxBand.size(); i++)
 	{
@@ -67,14 +67,16 @@ int dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vector
 				k = j;
 			}
 		}
-		// 标记"顶点k"为已经获取到最短路径
-		flag[k] = 1;
+		
 		//搜索失败，找不到有效路径，返回需要添加的服务器节点
 		if (k == lastK)
 		{
 			return k;
 		}
 		lastK = k;
+		
+		// 标记"顶点k"为已经获取到最短路径
+		flag[k] = 1;
 
 		// 修正当前最短路径和前驱顶点
 		// 即，当已经"顶点k的最短路径"之后，更新"未获取最短路径的顶点的最短路径和前驱顶点"。
@@ -137,10 +139,10 @@ int dijkstra(Graph& graph, vector<int>& serverLocations, CNode& consumer, vector
 		end = prev[start];
 	  
 		cout << " -> " << start;
-		if (start != consumer.netID)
-		{
+//		if (start != consumer.netID)
+//		{
 			result << " " << start;
-		}
+//		}
 	}
 	cout << "(consumer)." << endl;
 	result << " " << consumer.ID << " " << minBand << endl;
